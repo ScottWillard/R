@@ -1,0 +1,8 @@
+library(odbc)
+con <- dbConnect(odbc(),
+                 Driver = "SQLServer",
+                 Server = "mysqlhost",
+                 Database = "mydbname",
+                 UID = "USERNAME",
+                 PWD = rstudioapi::askForPassword("PASSWORD")
+                 Port = 1433)
