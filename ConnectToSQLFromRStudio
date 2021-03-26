@@ -4,5 +4,5 @@ con <- dbConnect(odbc(),
                  Server = "mysqlhost",
                  Database = "mydbname",
                  UID = "USERNAME",
-                 PWD = rstudioapi::askForPassword("PASSWORD")
+                 PWD = rstudioapi::askForPassword("PASSWORD"),
                  Port = 1433)
